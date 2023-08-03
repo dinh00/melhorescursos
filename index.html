@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di e Ma Cursos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="navegacao">
+            <input type="checkbox" id="menu" class="menu__botao">
+            <label for="menu">
+                <img class="navegacao__img" src="imagens/menu_black.png" alt="menu">
+            </label>
+            <ul class="menu__lista">
+                <li class="lista-item"><a class="lista-link" href="#">Cursos</a></li>
+                <li class="lista-item"><a class="lista-link" href="#">Livros</a></li>
+                <li class="lista-item"><a class="lista-link" href="#">Mentorias</a></li>
+            </ul>
+            <a class="navegacao__link" href="#"><img class="navegacao__img" src="imagens/compra.png" alt="carrinho"></a>
+            <input type="checkbox" id="perfil" class="perfil__botao">
+            <label for="perfil">
+                <img class="navegacao__img" src="imagens/perfil.png" alt="perfil">
+            </label>
+            <ul class="perfil__lista">
+               <li class="lista-item"><a class="lista-link" href="#">Meu Perfil</a></li>
+               <li class="lista-item"><a class="lista-link" href="#">Meus Cursos</a></li>
+               <li class="lista-item"><a class="lista-link" href="#">Meus Pedidos</a></li>
+               <li class="lista-item"><a class="lista-link" href="#">Configurações</a></li>
+               <li class="lista-item"><a class="lista-link" href="#">Sair</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <section class="pesquisa">
+        <h2 class="pesquisa__titulo">Curso, mentorias e livros da melhor qualidade</h2>
+        <p class="pesquisa__texto">Uma ampla gama de conhecimento esperando por você, basta você pagar</p>
+        <input type="search" placeholder="O que você procura?" class="pesquisa__search">
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h2 class="livro-titulo">Ganhar dinheiro</h2>
+                    <img src="imagens/Javascript.png" alt="">
+                    <h3 class="livro-preco">R$ 600,00</h3>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="livro-titulo">Ganhar + dinheiro</h2>    
+                    <img src="imagens/Liderança.png" alt="Liderança">
+                    <h3 class="livro-preco">R$ 1.000,00</h3>
+                </div>
+                <div class="swiper-slide">
+                    <h2 class="livro-titulo">Mestre ROBLOX</h2>    
+                    <img src="imagens/Nodejs.png" alt="Liderança">
+                    <h3 class="livro-preco">R$ 400,00</h3>
+                </div>
+            </div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div>
+            <h2 class="rodape__titulo">Dinho e Matalia</h2>
+            <p class="rodape__texto">Somos os melhores dos melhores sempre os melhores</p>
+        </div>
+        <h2 class="rodape__contato">Infomações</h2>
+        <ul class="rodape-lista">
+            <li class="rodape-item">Pagamentos</li>
+            <li class="rodape-item__none">Reclamações</li>
+            <li class="rodape-item">Elogios</li>
+            <li class="rodape-item">Doações</li>
+            <li class="rodape-item__none">Fale conosco</li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+
+.carrosel__titulo{
+    padding: .5em;
+    background-color: #d6d6d6;
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fonte-logo);
+}
+.livro-titulo{
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: var(--fonte-logo);
+}
+.livro-preco{
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+    font-family: var(--fonte-logo);
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+.swiper-slide img{
+    width: 100%;
+}

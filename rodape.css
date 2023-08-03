@@ -1,0 +1,29 @@
+.rodape{
+    padding: 1em;
+    text-align: center;
+    font-family: var(--fonte-logo);
+    color: white;
+    background: var(--azul-gradient);
+}
+.rodape__titulo{
+    font-family: var(--fonte-logo);
+    font-size: 2rem;
+    color: white;
+}
+.rodape__texto{
+    margin: 0 0 1em 0;
+}
+.rodape-lista{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.rodape-item{
+    margin-right: 1em;
+}
+.rodape-item__none{
+    margin-right: 1em;
+    text-decoration: line-through;
+}

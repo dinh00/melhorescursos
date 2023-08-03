@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('header.css');
+@import url('pesquisa.css');
+@import url('carrosel.css');
+@import url('rodape.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+:root{
+    --branco: white;
+    --preto: black;
+    --fonte-logo: 'Tektur';
+    --azul-gradient: linear-gradient(95.54deg, #002F52 35.45%, #3265B9 165.37%);
+}
